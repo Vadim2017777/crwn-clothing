@@ -5,7 +5,7 @@ import {
   addItem,
   removeItem,
   clearItemFromCart,
-} from "../../redux/cart/cart.action";
+} from "../../redux/cart/cart.actions";
 
 import "./check-out.styles.scss";
 

@@ -4,7 +4,7 @@ import { createStructuredSelector } from "reselect";
 
 import {
   selectCartItems,
-  selectorCartTotal,
+  selectCartTotal,
 } from "../../redux/cart/cart.selectors";
 
 import CheckoutItem from "../../components/checkout-item/checkout-item.component";
@@ -46,7 +46,7 @@ const CheckoutPage = ({ cartItems, total }) => (
 
 const mapStateToProps = createStructuredSelector({
   cartItems: selectCartItems,
-  total: selectorCartTotal,
+  total: selectCartTotal,
 });
 
 export default connect(mapStateToProps, null)(CheckoutPage);
